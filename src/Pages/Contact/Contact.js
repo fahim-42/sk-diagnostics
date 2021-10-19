@@ -9,7 +9,7 @@ const Contact = () => {
                 <div className="row mt-5 mb-3 d-flex justify-content-center">
                     <label htmlFor="inputText1" className="col-lg-2 col-form-label">Full Name</label>
                     <div className="col-lg-6">
-                        <input type="text" className="form-control colsp" id="inputtext1" placeholder="Your Message" />
+                        <input type="text" className="form-control colsp" id="inputtext1" placeholder="Your name" />
                     </div>
                 </div>
 
@@ -23,7 +23,7 @@ const Contact = () => {
                 <div className="row mb-3 d-flex justify-content-center">
                     <label htmlFor="inputText2" className="col-lg-2 col-form-label">Message</label>
                     <div className="col-lg-6">
-                        <input type="text" className="form-control colsp" id="inputtext2" placeholder="Your Message" />
+                        <input type="text" className="form-control colsp" id="inputtext2" placeholder="How can we help you ?" />
                     </div>
                 </div>
 

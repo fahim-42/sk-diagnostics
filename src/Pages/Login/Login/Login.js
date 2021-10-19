@@ -4,7 +4,7 @@ import useAuth from '../../../hooks/useAuth';
 const Login = () => {
     const { signInUsingGoogle, isLogin, error, handleRegistration, handleEmailChange, handlePasswordChange, toggleLogin } = useAuth();
     return (
-        <div className="col-lg-8 mx-auto mt-5 bg-transparent border rounded-3 shadow-lg">
+        <div className="col-lg-8 mx-auto my-5 bg-transparent border rounded-3 shadow-lg">
             <form onSubmit={handleRegistration}>
                 <h3 className="text-primary text-center pt-3 mb-4 fw-bolder fst-italic">Please {isLogin ? 'Login' : 'Register'}</h3>
 
