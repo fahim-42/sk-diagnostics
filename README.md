@@ -1,6 +1,6 @@
 # SK Diagnostics
 
-This project was built using css, bootstrap 5, react, react-bootstrap, react-router-dom, react-router-hash-link and firebase Watch this site [SK Diagnostics](https://sk-diagnostics.firebaseapp.com/).
+This project was built using css, bootstrap 5, react, react-bootstrap, react-router-dom, react-router-hash-link and firebase Watch this site [SK Diagnostics](https://sk-diagnostics.web.app/).
 
 ## Project Features
 
