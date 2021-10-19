@@ -1,8 +1,28 @@
 import React from 'react';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
-    const { signInUsingGoogle, isLogin, error, handleRegistration, handleEmailChange, handlePasswordChange, toggleLogin } = useAuth();
+    const { signInUsingGoogle, isLogin, error, handleRegistration, handleEmailChange, handlePasswordChange, toggleLogin, setUser } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+
+    const redirectPath = location.state?.form || '/home';
+
+    const googleLogin = () => {
+        signInUsingGoogle()
+        .then(result => {
+            const { displayName } = result.user;
+            const userDetails = {
+                name: displayName
+            };
+            setUser(userDetails);
+            history.push(redirectPath);
+        }).catch(error => {
+            console.log(error.message);
+        })
+    }
     return (
         <div className="col-lg-8 mx-auto my-5 bg-transparent border rounded-3 shadow-lg">
             <form onSubmit={handleRegistration}>
@@ -38,7 +58,7 @@ const Login = () => {
 
                 <div className="d-flex justify-content-center mb-3">
                     <button type="submit" className="btn btn-primary mb-3 fw-bold me-2">{isLogin ? 'Login' : 'Register'}</button>
-                    <button onClick={signInUsingGoogle} className="btn btn-warning mb-3 fw-bold ms-2">Google Signin</button>
+                    <button onClick={googleLogin} className="btn btn-warning mb-3 fw-bold ms-2">Google Signin</button>
                 </div>
             </form>
         </div>
