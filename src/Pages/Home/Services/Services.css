@@ -1,0 +1,21 @@
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin: 0 auto;
+    justify-items: center;
+    background-color: #d5f0fa;
+}
+
+.service-header {
+    background-color: #AAC2E8;
+    color: #004f83;
+}
+
+@media screen and (max-width: 688px) {
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+}

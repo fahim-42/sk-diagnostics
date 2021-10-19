@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Cardiology",
+        "image": "https://i.ibb.co/23sjXhq/cardiology.png",
+        "price": "1800",
+        "description": "A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker."
+    },
+    {
+        "id": 2,
+        "name": "Gastroenterologist",
+        "image": "https://i.ibb.co/r7DkCQx/gastroenterologist.png",
+        "price": "1200",
+        "description": "Gastroenterology is the study of the normal function and diseases of the esophagus, stomach, small intestine, colon and rectum, pancreas, gallbladder, bile ducts and liver. They are trained to diagnose and treat problems in gastrointestinal tract and liver."
+        
+    },
+    {
+        "id": 3,
+        "name": "Blood Test",
+        "image": "https://i.ibb.co/n3v10C7/bloodtest.png",
+        "price": "250",
+        "description": "A blood test is a lab analysis of things that may be found in your blood. You may have blood tests to keep track of how well you are managing a condition such as diabetes or high cholesterol. You may also have them for routine checkups or when you are ill."
+    },
+    {
+        "id": 4,
+        "name": "Neurosurgery",
+        "image": "https://i.ibb.co/7G1nzMz/neurosurgery.png",
+        "price": "2300",
+        "description": "Neurosurgery specially concerned with prevention, diagnosis, surgical treatment, and rehabilitation of disorders which affect any portion of the nervous system including the brain, spinal cord, central and peripheral nervous system, and cerebrovascular system."
+    },
+    {
+        "id": 5,
+        "name": "MRI",
+        "image": "https://i.ibb.co/Ld5TkQ6/mri.png",
+        "price": "6000",
+        "description": "Magnetic resonance imaging (MRI) is a type of scan that uses strong magnetic fields and radio waves to produce detailed images of the inside of the body. An MRI scanner is a large tube that contains powerful magnets. You lie inside the tube during the scan."
+    },
+    {
+        "id": 6,
+        "name": "Surgery",
+        "image": "https://i.ibb.co/TMPbnzX/surgery.png",
+        "price": "3500",
+        "description": "Surgery is a specialty that uses operative manual and instrumental techniques on a person to investigate or treat a pathological condition such as a disease or injury, to help improve bodily function, appearance, or to repair unwanted ruptured areas."
+    }
+]
