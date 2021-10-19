@@ -9,6 +9,7 @@ const useFirebase = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isLogin, setIsLogin] = useState(false);
+    const [error, setError] = useState('');
 
     const auth = getAuth();
 
@@ -48,20 +49,20 @@ const useFirebase = () => {
     const registerUserSignIn = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
-                // const user = result.user;
                 console.log(result.user);
+                setError('');
             }).catch(error => {
-                console.log(error.message);
+                setError(error.message);
             })
     }
 
     const loadUserSignIn = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                // const user = result.user;
                 console.log(result.user);
+                setError('');
             }).catch(error => {
-                console.log(error.message);
+                setError(error.message);
             })
     }
 
@@ -70,6 +71,11 @@ const useFirebase = () => {
 
         // console.log('registration done');
         console.log(email, password);
+
+        if (password.length < 6) {
+            setError('Password should be at least 6 characters');
+            return;
+        }
 
         isLogin ? loadUserSignIn(email, password) : registerUserSignIn(email, password);
     }
@@ -94,6 +100,7 @@ const useFirebase = () => {
         email,
         password,
         isLogin,
+        error,
         signInUsingGoogle,
         logout,
         registerUserSignIn,
